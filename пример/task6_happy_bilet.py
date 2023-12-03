@@ -8,16 +8,28 @@
 # 385916 -> yes
 # 123456 -> no
 
-print('Введите номер билета')
+# print('Введите номер билета')
+#
+# a = int(input())
+# b = int(input())
+# c = int(input())
+# d = int(input())
+# e = int(input())
+# g = int(input())
+#
+# if (a + b + c) == (d + e + g):
+#     print('yes')
+# else:
+#     print('no')
 
-a = int(input())
-b = int(input())
-c = int(input())
-d = int(input())
-e = int(input())
-g = int(input())
-
-if (a + b + c) == (d + e + g):
-    print('yes')
-else:
-    print('no')
+print("введите номер билета")
+n = input()
+v = input()
+res = 0
+for i in n:
+    res += int(i)
+print(res)
+res2 = 0
+for j in v:
+    res2 += int(v)
+print(res2)
