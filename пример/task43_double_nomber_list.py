@@ -1,3 +1,4 @@
+'''
 Дан список чисел. Посчитайте, сколько в нем пар
 элементов, равных друг другу. Считается, что любые
 два элемента, равные друг другу образуют одну пару,
@@ -6,4 +7,14 @@
 строках.
 Ввод: 1 2 3 2 3
 Вывод: 2
+'''
 
+import random
+n = int(input('Список первый задай: '))
+lst = [random.randint(1,15) for _ in range(n)]
+print(lst)
+print(set(lst))
+count = 0
+for item in set(lst):
+    count += lst.count(item)//2
+print(count)

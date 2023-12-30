@@ -22,14 +22,30 @@
 # else:
 #     print('no')
 
+# print("введите номер билета")
+# n = input()
+
+# res1 = 0
+# res2 = 0
+# for i in n:
+#     res1 += int(i)
+#
+#     for j in n:
+#         res2 += int(j)
+#
+# if res1 == res2:
+#     print('yes')
+# else:
+#     print('no')
 print("введите номер билета")
-n = input()
-v = input()
-res = 0
-for i in n:
-    res += int(i)
-print(res)
-res2 = 0
-for j in v:
-    res2 += int(v)
-print(res2)
+n = int(input())
+n1 = n // 100000
+n2 = (n % 100000) // 10000
+n3 = (n % 10000) // 1000
+n4 = (n % 1000) // 100
+n5 = (n % 100) // 10
+n6 = n % 10
+if n1 + n2 + n3 == n4 + n5 + n6:
+    print('yes')
+else:
+    print('no')
